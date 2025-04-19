@@ -1,9 +1,20 @@
 ---
+title: Si pace ad caput
 Author: Sigurd Vie
 date: 2024-04-16
-#image: ./img/covers/artikkel1.jpg
+image: /img/covers/artikkel1.jpg
 ---
-# Si pace ad caput
+
+<script setup>
+import ArtikkelHero from '../components/ArtikkelHero.vue';
+</script>
+
+<ArtikkelHero 
+  title="Si pace ad caput"
+  subtitle="A deep dive into peace" 
+  image="/img/covers/artikkel1.jpg" 
+/>
+
 Exercitation labore esse amet occaecat reprehenderit elit voluptate veniam sint et cillum qui minim ad. Nostrud occaecat quis ullamco laboris pariatur et cupidatat exercitation quis. Reprehenderit do sint nisi anim nulla reprehenderit commodo laboris. Culpa cupidatat tempor adipisicing et et adipisicing laboris id irure incididunt est duis labore incididunt. Sint est culpa aute eiusmod magna anim dolor laboris. Sunt consequat aliqua consectetur Lorem officia ea irure officia quis. In aliqua et eiusmod eu duis et irure nostrud officia incididunt sit cupidatat anim.
 
 Exercitation excepteur irure nulla adipisicing minim aliqua aliquip consequat duis. Aliquip magna velit sint do sint tempor sint veniam esse excepteur sint fugiat magna incididunt. Adipisicing mollit irure veniam voluptate irure excepteur. Velit aliqua consectetur amet in ex est id incididunt consectetur sunt aliquip officia voluptate.
