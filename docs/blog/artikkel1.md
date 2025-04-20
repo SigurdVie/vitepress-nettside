@@ -11,7 +11,6 @@ import ArtikkelHero from '../components/ArtikkelHero.vue';
 
 <ArtikkelHero 
   title="Si pace ad caput"
-  subtitle="A deep dive into peace" 
   image="/img/covers/artikkel1.jpg" 
 />
 

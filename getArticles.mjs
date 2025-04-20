@@ -39,17 +39,20 @@ async function generateArticlesData() {
                 .map(async (article) => {
                     const file = matter.read(`${blogDir}/${article}`);
                     const { data, path: filePath } = file;
-                    
+
                     // Check for <!-- more --> split
                     const moreSplit = file.content.split('<!-- more -->');
-                    
-                    // If <!-- more --> exists, use content before it, otherwise use first paragraph
-                    const excerptContent = moreSplit.length > 1 
+
+                    // If <!-- more --> exists, use content before it, otherwise find the first paragraph
+                    let excerptContent = moreSplit.length > 1 
                         ? moreSplit[0]
-                        : file.content.split('\n\n')[0];
-                    
+                        : file.content.split('\n\n').find(paragraph => {
+                            // Skip lines that start with '<' or are empty
+                            return !paragraph.trim().startsWith('<') && paragraph.trim().length > 0;
+                        });
+
                     // Clean up the excerpt
-                    const excerpt = removeMd(excerptContent)
+                    const excerpt = removeMd(excerptContent || '')
                         .trim()
                         .replace(/\s{2,}/g, ' ');
 

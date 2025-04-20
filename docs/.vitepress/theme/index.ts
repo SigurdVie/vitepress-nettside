@@ -8,7 +8,13 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      'home-hero-image': () => {
+        return h('img', {
+          src: '/img/avatar.jpg',
+          alt: 'Sigurd Vie',
+          class: 'home-hero-image'
+        })
+      }
     })
   },
   enhanceApp({ app, router, siteData }) {

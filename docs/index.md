@@ -6,6 +6,9 @@ hero:
   name: "Sigurd E. H. Vie"
   text: "Politics, technology, sience & nature"
   tagline: My great project tagline
+  image:
+    src: /img/avatar.jpg
+    alt: Sigurd Vie
   actions:
     - theme: brand
       text: Blog
