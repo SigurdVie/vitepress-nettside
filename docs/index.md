@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Sigurd E. H. Vie"
   text: "Politics, technology, sience & nature"
-  tagline: My great project tagline
+  tagline: And also some hobby programming!
   image:
     src: /img/avatar.jpg
     alt: Sigurd Vie
@@ -14,8 +14,8 @@ hero:
       text: Blog
       link: /blog
     - theme: alt
-      text: API Examples
-      link: /
+      text: Projects
+      link: /projects
 
 features:
   - title: Feature A

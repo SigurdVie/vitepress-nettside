@@ -1,8 +1,8 @@
 <template>
-  <div class="hero">
+  <div class="blog-hero">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">Hey, I'm {{ name || "John Doe" }}.</h1>
+        <h1 class="title">{{ title }}</h1>
         <h2 class="subtitle">
           {{ subtitle }}
         </h2>
@@ -14,7 +14,7 @@
 <script>
 export default {
   props: {
-    name: {
+    title: {
       type: String,
       required: true,
     },
@@ -28,7 +28,7 @@ export default {
 
 
 <style scoped>
-.hero {
+.blog-hero {
   text-align: center;
 }
 

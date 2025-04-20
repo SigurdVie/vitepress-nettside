@@ -2,8 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
+  vite: { 
+    ssr: { noExternal: ['@cynber/vitepress-valence']} 
+  }, 
+
   title: "Sigurd E. H. Vie",
-  description: "Politics, technology, sience & nature",
+  description: "Poliatics, technology, sience & nature",
   themeConfig: {
     footer: {
       message: 'Released under the X License.',
